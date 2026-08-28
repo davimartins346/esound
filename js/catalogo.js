@@ -29,7 +29,7 @@ const PRODUTOS = [
         nome: "Baixo Yamaha TRBX304",
         preco: "R$ 2.699,90",
         descricao: "Baixo ativo de 4 cordas com excelente versatilidade tonal.",
-        imagem: "img/baixoyamahatrbx304.jpg",
+        imagem: "img/baixoyamahatrbx304.png",
         categoria: "Baixos",
         avaliacao: 4.3
     },
