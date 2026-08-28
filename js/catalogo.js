@@ -20,7 +20,7 @@ const PRODUTOS = [
         nome: "Guitarra Fender Stratocaster",
         preco: "R$ 5.499,90",
         descricao: "Clássica guitarra Fender Stratocaster. Som versátil e design icônico.",
-        imagem: "img/guitarra.jpg",
+        imagem: "img/guitarrafenderstratocaster.png",
         categoria: "Guitarras",
         avaliacao: 4.8
     },
