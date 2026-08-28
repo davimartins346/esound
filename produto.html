@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produto | E-Sound</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produto.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-guitar"></i>
+        <h2>E-Sound</h2>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="produto">
+
+    <img id="imagem" src="" alt="Produto">
+
+    <div class="info">
+
+        <h1 id="nome"></h1>
+
+        <div class="estrelas">
+            ★★★★★
+        </div>
+
+        <div class="preco" id="preco"></div>
+
+        <p class="descricao" id="descricao"></p>
+
+        <!-- NOVO: Especificações do produto -->
+        <div class="especificacoes" id="especificacoes">
+            <h3>📋 Especificações</h3>
+            <ul id="specList"></ul>
+        </div>
+
+        <div class="botoes">
+
+            <button class="btn comprar">
+                🛒 Comprar
+            </button>
+
+            <button class="btn voltar" onclick="history.back()">
+                ← Voltar
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 E-Sound - Todos os direitos reservados.</p>
+
+</footer>
+
+<script src="js/produto.js"></script>
+
+</body>
+</html>

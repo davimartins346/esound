@@ -1,0 +1,631 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    width: 100%;
+    background: #0d47a1;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 34px;
+    color: #FFD54F;
+}
+
+.logo h2 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #FFD54F;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-buttons button {
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    background: white;
+    color: #0d47a1;
+
+    font-size: 18px;
+}
+
+.header-buttons button:hover {
+
+    background: #FFD54F;
+
+}
+
+/* ===========================
+   BANNER
+=========================== */
+
+.banner {
+
+    height: 520px;
+
+    background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+        url("https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 8%;
+
+    color: white;
+
+}
+
+.banner-text {
+    max-width: 600px;
+}
+
+.banner h1 {
+
+    font-size: 54px;
+    margin-bottom: 20px;
+
+}
+
+.banner p {
+
+    font-size: 20px;
+    margin-bottom: 30px;
+
+}
+
+.banner button {
+
+    background: #FFD54F;
+    color: #222;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.banner button:hover {
+
+    background: white;
+
+}
+
+/* ===========================
+PESQUISA
+=========================== */
+
+.pesquisa {
+
+    display: flex;
+    justify-content: center;
+
+    margin: 50px;
+
+}
+
+.pesquisa input {
+
+    width: 450px;
+
+    padding: 15px;
+
+    border: 2px solid #0d47a1;
+
+    border-radius: 30px 0 0 30px;
+
+    outline: none;
+
+}
+
+.pesquisa button {
+
+    width: 60px;
+
+    background: #0d47a1;
+
+    color: white;
+
+    border-radius: 0 30px 30px 0;
+
+}
+
+/* ===========================
+T�TULOS
+=========================== */
+
+section h2 {
+
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 35px;
+
+}
+
+/* ===========================
+CATEGORIAS
+=========================== */
+
+.categorias {
+
+    padding: 70px 8%;
+
+}
+
+.categoria-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 25px;
+
+}
+
+.categoria {
+
+    background: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    padding: 35px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+}
+
+.categoria:hover {
+
+    transform: translateY(-10px);
+
+}
+
+.categoria i {
+
+    font-size: 45px;
+
+    color: #0d47a1;
+
+    margin-bottom: 15px;
+
+}
+
+/* ===========================
+PRODUTOS
+=========================== */
+
+.produtos {
+
+    padding: 70px 8%;
+
+}
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 30px;
+
+}
+
+.card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.card img {
+
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.card h3 {
+
+    padding: 20px 20px 10px;
+
+}
+
+.preco {
+
+    color: #0d47a1;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    padding: 0 20px;
+
+}
+
+.card button {
+
+    margin: 20px;
+
+    width: calc(100% - 40px);
+
+    padding: 14px;
+
+    background: #0d47a1;
+
+    color: white;
+
+    border-radius: 8px;
+
+}
+
+.card button:hover {
+
+    background: #1565c0;
+
+}
+
+/* ===========================
+BENEF�CIOS
+=========================== */
+
+.beneficios {
+
+    background: #0d47a1;
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+    text-align: center;
+
+    padding: 60px 8%;
+
+    gap: 25px;
+
+}
+
+.beneficios i {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+    color: #FFD54F;
+
+}
+
+/* ===========================
+NEWSLETTER
+=========================== */
+
+.newsletter {
+
+    text-align: center;
+
+    padding: 70px 8%;
+
+}
+
+.newsletter input {
+
+    width: 380px;
+
+    padding: 15px;
+
+    border: 1px solid #bbb;
+
+    border-radius: 30px;
+
+    margin-top: 20px;
+
+    outline: none;
+
+}
+
+.newsletter button {
+
+    display: block;
+
+    margin: 25px auto;
+
+    background: #0d47a1;
+
+    color: white;
+
+    padding: 15px 40px;
+
+    border-radius: 30px;
+
+}
+
+.newsletter button:hover {
+
+    background: #1565c0;
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer {
+
+    background: #111;
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 40px;
+
+    padding: 60px 8%;
+
+}
+
+footer h3 {
+
+    margin-bottom: 20px;
+
+}
+
+footer ul {
+
+    list-style: none;
+
+}
+
+footer li {
+
+    margin-bottom: 10px;
+
+}
+
+/* ===========================
+RESPONSIVO
+=========================== */
+
+@media(max-width:900px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+    nav ul {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .banner {
+
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 40px;
+
+    }
+
+    .banner h1 {
+
+        font-size: 40px;
+
+    }
+
+    .banner p {
+
+        font-size: 18px;
+
+    }
+
+    .pesquisa input {
+
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .banner {
+
+        height: 420px;
+
+    }
+
+    .banner h1 {
+
+        font-size: 30px;
+
+    }
+
+    .banner p {
+
+        font-size: 16px;
+
+    }
+
+    .newsletter input {
+
+        width: 100%;
+
+    }
+
+}
+
+/* Toast */
+
+.toast {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    background: #0d47a1;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 8px;
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition: .3s;
+
+    z-index: 9999;
+
+}
+
+.toast.mostrar {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/* Contador do carrinho */
+
+.header-buttons button {
+
+    position: relative;
+
+}
+
+#contadorCarrinho {
+
+    position: absolute;
+
+    top: -5px;
+
+    right: -5px;
+
+    background: red;
+
+    color: white;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+}

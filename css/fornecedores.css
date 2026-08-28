@@ -1,0 +1,316 @@
+/* ==========================================
+   FORNECEDORES - MUSIC STORE
+========================================== */
+
+.fornecedores{
+    width:90%;
+    max-width:1400px;
+    margin:40px auto;
+}
+
+.fornecedores h1{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:35px;
+    font-size:38px;
+}
+
+/* ===========================
+   FORMULÁRIO
+=========================== */
+
+#formFornecedor{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+
+    margin-bottom:40px;
+}
+
+#formFornecedor input{
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+#formFornecedor input:focus{
+    border-color:#0d47a1;
+    box-shadow:0 0 8px rgba(13,71,161,.2);
+}
+
+#formFornecedor button{
+    grid-column:1/-1;
+
+    padding:16px;
+
+    background:#0d47a1;
+    color:#fff;
+
+    border:none;
+    border-radius:8px;
+
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#formFornecedor button:hover{
+    background:#1565c0;
+}
+
+/* ===========================
+   PESQUISA
+=========================== */
+
+#pesquisaFornecedor{
+    width:100%;
+    padding:15px;
+    margin:30px 0;
+
+    border:1px solid #ccc;
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+}
+
+#pesquisaFornecedor:focus{
+    border-color:#0d47a1;
+    box-shadow:0 0 8px rgba(13,71,161,.2);
+}
+
+/* ===========================
+   TABELA
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+thead{
+
+    background:#0d47a1;
+
+    color:white;
+
+}
+
+thead th{
+
+    padding:18px;
+
+    text-align:left;
+
+    font-size:15px;
+
+}
+
+tbody td{
+
+    padding:16px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:#f5f8ff;
+
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.btnEditar{
+
+    background:#ff9800;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 15px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    margin-right:8px;
+
+    transition:.3s;
+
+}
+
+.btnEditar:hover{
+
+    background:#f57c00;
+
+}
+
+.btnExcluir{
+
+    background:#e53935;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 15px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btnExcluir:hover{
+
+    background:#c62828;
+
+}
+
+/* ===========================
+   MENSAGEM SEM DADOS
+=========================== */
+
+.sem-registros{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#777;
+
+    font-size:20px;
+
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:900px){
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr{
+
+        display:block;
+
+    }
+
+    thead{
+
+        display:none;
+
+    }
+
+    tbody tr{
+
+        background:white;
+
+        margin-bottom:20px;
+
+        border-radius:10px;
+
+        box-shadow:0 5px 10px rgba(0,0,0,.08);
+
+        padding:15px;
+
+    }
+
+    tbody td{
+
+        border:none;
+
+        display:flex;
+
+        justify-content:space-between;
+
+        padding:10px 0;
+
+    }
+
+    tbody td::before{
+
+        font-weight:bold;
+
+        color:#0d47a1;
+
+    }
+
+    tbody td:nth-child(1)::before{
+        content:"Empresa";
+    }
+
+    tbody td:nth-child(2)::before{
+        content:"Contato";
+    }
+
+    tbody td:nth-child(3)::before{
+        content:"Telefone";
+    }
+
+    tbody td:nth-child(4)::before{
+        content:"E-mail";
+    }
+
+    tbody td:nth-child(5)::before{
+        content:"Cidade";
+    }
+
+    tbody td:nth-child(6)::before{
+        content:"Ações";
+    }
+
+}
+
+@media(max-width:600px){
+
+    .fornecedores h1{
+
+        font-size:28px;
+
+    }
+
+    #formFornecedor{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

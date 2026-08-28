@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | E-Sound</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-guitar"></i>
+        <h2>E-Sound</h2>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="catalogo">
+    <h1>🎵 Nossos Produtos</h1>
+    
+    <div class="filtros">
+        <button class="filtro-btn ativo" data-categoria="todos">Todos</button>
+        <button class="filtro-btn" data-categoria="Violões">Violões</button>
+        <button class="filtro-btn" data-categoria="Guitarras">Guitarras</button>
+        <button class="filtro-btn" data-categoria="Baixos">Baixos</button>
+        <button class="filtro-btn" data-categoria="Teclados">Teclados</button>
+        <button class="filtro-btn" data-categoria="Baterias">Baterias</button>
+        <button class="filtro-btn" data-categoria="Cordas">Cordas</button>
+    </div>
+
+    <div class="grid-produtos" id="listaProdutos">
+        <!-- Os produtos serão inseridos pelo catalogo.js -->
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 E-Sound - Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/catalogo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | E-Sound</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/checkout.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-guitar"></i>
+
+<h2>E-Sound</h2>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Início</a></li>
+<li><a href="catalogo.html">Catálogo</a></li>
+<li><a href="carrinho.html">Carrinho</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="checkout">
+
+<h1>Finalizar Compra</h1>
+
+<form id="checkoutForm">
+
+<label>Nome Completo</label>
+<input type="text" id="nome" required>
+
+<label>CPF</label>
+<input type="text" id="cpf" required>
+
+<label>Telefone</label>
+<input type="text" id="telefone" required>
+
+<label>Endereço</label>
+<input type="text" id="endereco" required>
+
+<label>Cidade</label>
+<input type="text" id="cidade" required>
+
+<label>Estado</label>
+<input type="text" id="estado" required>
+
+<label>Forma de Pagamento</label>
+
+<select id="pagamento">
+
+<option>PIX</option>
+
+<option>Cartão de Crédito</option>
+<option>Cartão de Débito</option>
+<option>Boleto Bancário</option>
+
+</select>
+
+<button>
+
+Finalizar Pedido
+
+</button>
+
+</form>
+
+</section>
+
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>

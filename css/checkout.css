@@ -1,0 +1,144 @@
+/* ==========================
+   CHECKOUT
+========================== */
+
+.checkout {
+
+    width: 90%;
+    max-width: 700px;
+
+    margin: 50px auto;
+    padding: 40px;
+
+    background: #fff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+.checkout h1 {
+
+    text-align: center;
+
+    color: #17489f;
+
+    margin-bottom: 35px;
+
+    font-size: 32px;
+
+}
+
+#checkoutForm {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+#checkoutForm label {
+
+    margin-top: 18px;
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: #333;
+
+}
+
+#checkoutForm input,
+#checkoutForm select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+#checkoutForm input:focus,
+#checkoutForm select:focus {
+
+    border-color: #17489f;
+
+    box-shadow: 0 0 6px rgba(23, 72, 159, 0.3);
+
+}
+
+#checkoutForm button {
+
+    margin-top: 35px;
+
+    padding: 15px;
+
+    background: #17489f;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+#checkoutForm button:hover {
+
+    background: #0f3478;
+
+}
+
+#checkoutForm button:active {
+
+    transform: scale(0.98);
+
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media (max-width: 768px) {
+
+    .checkout {
+
+        width: 95%;
+
+        padding: 25px;
+
+    }
+
+    .checkout h1 {
+
+        font-size: 26px;
+
+    }
+
+    #checkoutForm input,
+    #checkoutForm select,
+    #checkoutForm button {
+
+        font-size: 15px;
+
+    }
+
+}

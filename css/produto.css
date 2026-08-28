@@ -1,0 +1,177 @@
+.produto {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.info h1 {
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.estrelas {
+    color: #ffc107;
+    font-size: 24px;
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+
+.estrelas .vazia {
+    color: #ddd;
+}
+
+.preco {
+    color: #17489f;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.descricao {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Novos estilos para especificações */
+.especificacoes {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.especificacoes h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.especificacoes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.especificacoes li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.especificacoes li:last-child {
+    border-bottom: none;
+}
+
+.especificacoes .label {
+    font-weight: 600;
+    color: #555;
+}
+
+.especificacoes .valor {
+    color: #222;
+}
+
+.botoes {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.comprar {
+    background: #17489f;
+    color: white;
+    flex: 1;
+}
+
+.comprar:hover {
+    background: #0d3479;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(23, 72, 159, 0.3);
+}
+
+.voltar {
+    background: #ddd;
+}
+
+.voltar:hover {
+    background: #c9c9c9;
+}
+
+/* Feedback de adicionado ao carrinho */
+.comprar.adicionado {
+    background: #28a745 !important;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .produto {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .info h1 {
+        font-size: 30px;
+    }
+    
+    .preco {
+        font-size: 32px;
+    }
+    
+    .descricao {
+        font-size: 16px;
+    }
+    
+    .botoes {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .info h1 {
+        font-size: 24px;
+    }
+    
+    .preco {
+        font-size: 28px;
+    }
+    
+    .estrelas {
+        font-size: 20px;
+    }
+}

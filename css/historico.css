@@ -1,0 +1,93 @@
+.historico{
+
+width:90%;
+
+max-width:1200px;
+
+margin:40px auto;
+
+}
+
+.historico h1{
+
+text-align:center;
+
+margin-bottom:40px;
+
+color:#0d47a1;
+
+}
+
+.pedido{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+margin-bottom:30px;
+
+}
+
+.pedido h2{
+
+color:#0d47a1;
+
+margin-bottom:15px;
+
+}
+
+.pedido p{
+
+margin:8px 0;
+
+}
+
+.produtos{
+
+margin-top:20px;
+
+border-top:1px solid #ddd;
+
+padding-top:15px;
+
+}
+
+.produto{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:8px 0;
+
+border-bottom:1px solid #eee;
+
+}
+
+.total{
+
+margin-top:20px;
+
+font-size:22px;
+
+font-weight:bold;
+
+color:#0d47a1;
+
+}
+
+.semPedidos{
+
+text-align:center;
+
+font-size:22px;
+
+margin-top:100px;
+
+color:#777;
+
+}
