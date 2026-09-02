@@ -38,7 +38,7 @@ const PRODUTOS = [
         nome: "Teclado Casio CT-X700",
         preco: "R$ 1.899,90",
         descricao: "Teclado digital com 61 teclas e diversos sons e ritmos.",
-        imagem: "img/teclado.jpg",
+        imagem: "img/tecladocasioctx700.png",
         categoria: "Teclados",
         avaliacao: 4.2
     },
@@ -47,7 +47,7 @@ const PRODUTOS = [
         nome: "Bateria Eletrônica Roland TD-1DMK",
         preco: "R$ 4.299,90",
         descricao: "Bateria eletrônica com mesh heads e som realista.",
-        imagem: "img/bateria.jpg",
+        imagem: "img/bateriaeletrônicarolandtd1dmk.png",
         categoria: "Baterias",
         avaliacao: 4.6
     },
